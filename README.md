@@ -18,7 +18,10 @@
      
 
 ### 5. **Screenshots** 
-![Portfolio Screenshot](.Screenshot(6).png)
+![Screenshot (6)](https://github.com/user-attachments/assets/0a606b16-37f1-4c3a-a389-a82f45a2b876)
+![Screenshot (7)](https://github.com/user-attachments/assets/c3f1e39f-bd21-4bca-abb0-1e441e468eaa)
+![Screenshot (8)](https://github.com/user-attachments/assets/9ef8747a-3a7a-4981-a54c-8dee7f000722)
+
 
 
 
