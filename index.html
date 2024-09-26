@@ -270,85 +270,86 @@
         color: #16423c;
       }
 
-      /* Responsive Design */
-      @media (max-width: 1024px) {
-        .box {
-          grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
-          gap: 30px;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .box {
-          grid-template-columns: 1fr; /* Single column for mobile */
-        }
-
-        .image-top,
-        .image-topTwo,
-        .image-topThree {
-          width: 50px; /* Smaller images for mobile */
-        }
-
-        .vertical-title,
-        .vertical-titleTwo,
-        .vertical-titleThree {
-          font-size: 1rem;
-        }
-
-        .vertical-desc ul,
-        .vertical-descTwo ul,
-        .vertical-descThree ul {
-          font-size: 0.9rem;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .secondSection {
-          max-width: 95vw;
-        }
-
-        .vertical-title,
-        .vertical-titleTwo,
-        .vertical-titleThree {
-          font-size: 0.9rem;
-        }
-
-        .vertical-desc ul,
-        .vertical-descTwo ul,
-        .vertical-descThree ul {
-          font-size: 0.85rem;
-        }
-      }
-
-      /* Adding style to footer */
       footer {
         background-color: #6c4e31;
-        padding: 12px 0;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
       }
 
       .footer {
         display: flex;
-        margin: 23px 122px;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 0;
       }
 
-      .footer ul {
-        list-style: none;
+      .footer-second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px; /* Space between logos */
       }
 
-      .footer > div {
-        width: 223px;
+      /* Separate classes for each logo */
+      .github-logo {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
       }
 
-      footer .footer-rights {
-        text-align: center;
-        color: gray;
-        padding: 12px 0;
+      .linkedin-logo {
+        width: 120px;
+        height: 120px;
+        opacity: 0.7;
+        object-fit: contain;
+        transition: transform 0.3s ease;
       }
 
-      .footer-second a {
-        text-decoration: none;
-        color: white;
+      .github-logo:hover,
+      .linkedin-logo:hover {
+        transform: scale(1.1);
+      }
+
+      .footer-rights {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #9c97f1;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .footer-second {
+          gap: 30px;
+        }
+
+        .github-logo,
+        .linkedin-logo {
+          width: 100px;
+          height: 100px;
+        }
+
+        .footer-rights {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .footer-second {
+          gap: 20px;
+        }
+
+        .github-logo,
+        .linkedin-logo {
+          width: 80px;
+          height: 80px;
+        }
+
+        .footer-rights {
+          font-size: 0.75rem;
+        }
       }
     </style>
   </head>
@@ -444,40 +445,27 @@
 
     <footer>
       <div class="footer">
-        <div class="footer-first"></div>
-        <div style="width: 934px" class="footer-second">
-          <!-- GitHub log -->
-          <a
-            style="margin-left: 245px"
-            href="https://github.com/"
-            target="_main"
-            ><img
-              src="github logo.png"
-              width="155px"
-              style="margin-left: -48px"
-              ;
-          /></a>
-          <!-- Linkedin logo -->
-          <a href="https://www.linkedin.com/feed/"
-            ><img
-              style="
-                margin-bottom: 17px;
-                opacity: 0.6;
-                width: 127px;
-                margin-left: 110px;
-              "
+        <div class="footer-second">
+          <!-- GitHub logo -->
+          <a href="https://github.com/" target="_main">
+            <img src="github logo.png" alt="GitHub Logo" class="github-logo" />
+          </a>
+          <!-- LinkedIn logo -->
+          <a href="https://www.linkedin.com/feed/">
+            <img
               src="linkedin logo.png"
-              width="155px"
-          /></a>
+              alt="LinkedIn Logo"
+              class="linkedin-logo"
+            />
+          </a>
         </div>
-        <div class="footer-third"></div>
-        <div class="footer-fourth"></div>
       </div>
       <div class="footer-rights">
-        <!-- Adding copytright symbol -->
+        <!-- Adding copyright symbol -->
         Copyright &#169; vinaysportfolio.com | All rights reserved
       </div>
     </footer>
+
     <!-- Adding typed.js here -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
