@@ -18,7 +18,7 @@
      
 
 ### 5. **Screenshots** 
-![Portfolio Screenshot](screenshot(6).png)
+![Portfolio Screenshot](Screenshot (6).png)
 
 
 
